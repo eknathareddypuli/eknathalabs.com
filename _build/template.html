@@ -217,6 +217,10 @@ h2{font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.08;letter-spacing:-.03em;fon
 .stop-desc{display:block;margin-top:2px;font-size:14.5px;color:var(--text-muted);line-height:1.55}
 .stop-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:8px}
 .host{font-family:var(--mono);font-size:12px;color:var(--host)}
+.stops li.soon .stop{cursor:default}
+.stops li.soon .dot,.stops li.soon .stop:hover .dot{background:transparent;border-style:dashed;transform:none}
+.stops li.soon .stop:hover .stop-name{text-decoration:none}
+.chip.soon{background:transparent;border-style:dashed;color:var(--text)}
 .chip{font-family:var(--mono);font-size:11px;font-weight:500;line-height:1;padding:4px 9px;border-radius:999px;border:1.5px solid var(--ink);background:var(--gold);color:var(--ink)}
 .arrow{margin-top:3px;color:var(--text);transition:transform .2s var(--ease)}
 .stop:hover .arrow{transform:translate(3px,-3px)}

@@ -50,6 +50,9 @@ LINES = [
      ]},
 ]
 
+# Planned stops (not live): shown in their line as a non-link "Coming soon" stop. Not counted, not in footer/JSON-LD.
+PLANNED = {"files": [("Drishvana", "drishvana", "d.drishvana")]}
+
 # (slug, state). Building first, then planned. Text lives in i18n under w.<slug>.t / .d
 DRAWERS = []  # no work-in-progress section on the site
 
@@ -87,6 +90,14 @@ def line_html(l):
             <span class="stop-meta"><span class="host">{host}</span>{chip_html}</span></span>
             {ARROW}
           </a></li>''')
+    for name, sub, dkey in PLANNED.get(l["key"], []):
+        host = f"{sub}.eknathalabs.com"
+        stops.append(
+            f'''          <li class="soon"><div class="stop planned">
+            <span class="dot" aria-hidden="true"></span>
+            <span><span class="stop-name">{e(name)}</span><span class="stop-desc" {i18n(dkey)}>x</span>
+            <span class="stop-meta"><span class="host">{host}</span><span class="chip soon" {i18n("chip.soon")}>x</span></span></span>
+          </div></li>''')
     n, k = len(l["stops"]), l["key"]
     return f'''      <article class="line reveal" style="--lc:{l["color"]}">
         <div class="line-head"><h3 {i18n("ln." + k)}>x</h3><span {i18n("stops.n", n)}>x</span></div>
