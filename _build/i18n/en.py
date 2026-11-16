@@ -48,7 +48,7 @@ T = {
  "d.bhasha": "Type English, hear it in 17 languages: Telugu, Hindi, Kannada, Tamil, Malayalam, Bengali, Marathi, Gujarati, Assamese, Korean, Spanish, German, French, Odia, Nepali, Japanese, English. Daily lessons, 50+ conversation drills, pronunciation practice, 560 phrases. Free and private. Learn from your own videos and texts. Works offline.",
  "d.patram": "Merge, split, compress, convert and reorder PDFs. Nothing is uploaded.",
  "d.bimba": "Resize, compress, convert, crop and edit images. No uploads.",
- "d.drishvana": "Create videos with audio longer than 30 seconds.",
+ "d.drishvana": "Turn your ideas into finished videos, with narration and sound included.",
  "free.h2": "Great technology shouldn't have a price of entry.",
  "free.mission": "Our goal is simple: make great technology free and accessible to everyone.",
  "free.s1t": "No account",
